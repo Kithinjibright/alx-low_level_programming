@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	while (*s != '\0')
 	{
-		len++
+		len++;
 		s++;
 	}
 
@@ -36,7 +36,7 @@ void puts_half(char *str)
 		idx = (len / 2) + 1;
 
 	else
-		idx = (len / 2)
+		idx = (len / 2);
 	
 	while (idx < len)
 	{
