@@ -5,7 +5,7 @@
  * @s: string to be printed
  */
 
-vooid print_rev(char *s)
+void print_rev(char *s)
 {
 	int i, j, len;
 
