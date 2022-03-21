@@ -5,7 +5,6 @@
  * @s: string
  * Return: length
  */
-
 int _strlen(char *s)
 {
 	int len = 0;
@@ -15,7 +14,6 @@ int _strlen(char *s)
 		len++;
 		s++;
 	}
-
 	return (len);
 }
 /**
@@ -41,7 +39,6 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 			++d;
-
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
@@ -55,10 +52,8 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-
 	if (f == 0)
 		return (0);
-	
 	return (n);
 }
 
