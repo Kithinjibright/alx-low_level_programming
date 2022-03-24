@@ -11,6 +11,7 @@ char *leet(char *s)
 	int i, x;
 	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int replacer[] = {'4', '3', '0', '7', '1'};
+	
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (x = 0; x <= 9; x++)
@@ -22,7 +23,6 @@ char *leet(char *s)
 			}
 		}
 	}
-
 	return (s);
 }
 	
