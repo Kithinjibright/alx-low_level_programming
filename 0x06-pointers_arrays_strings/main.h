@@ -70,20 +70,20 @@ char *string_toupper(char *);
 char *cap_string(char *);
 
 /**
- * leet - encode string to 1337
- * @s: manipulate this string
- * Return: encoded string
- */
-
-char *leet(char *);
-
-/**
  * rot13 - encode string using rot13
  * @s: string to encode
  * Return: encoded string
  */
 
 char *rot13(char *s);
+
+/**
+ * leet - encode string to 1337 leet
+ * @s: manipulate this string
+ * Return: encoded string
+ */
+
+char *leet(char *);
 
 /**
  * print_number - print integer, without using long, arrays, or pointers
