@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * leet - encode string to 1337
- * @n: manipulate this string
- * Return: encoded string
+ * leet - Entry point
+ * ONE if, TWO loops only...
+ * @n: input
+ * Return: Always 0 (Success)
  */
 char *leet(char *n)
 {
