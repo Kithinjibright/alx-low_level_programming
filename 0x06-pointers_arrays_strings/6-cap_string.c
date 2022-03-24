@@ -12,7 +12,6 @@ char *cap_string(char *s)
 	int cap = 32;
 	int separators[] = {',', ';', '.', '?', '"',
 		'(', ')', '{', '}', ' ', '\n', '\t'};
-
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
@@ -21,7 +20,6 @@ char *cap_string(char *s)
 		}
 
 		cap = 0;
-		
 		for (x = 0; x <= 12; x++)
 		{
 			if (s[i] == separators[x])
