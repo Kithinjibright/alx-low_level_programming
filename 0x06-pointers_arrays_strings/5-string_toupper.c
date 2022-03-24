@@ -6,7 +6,7 @@
  * Return: string with all letters in uppercase
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int i;
 
