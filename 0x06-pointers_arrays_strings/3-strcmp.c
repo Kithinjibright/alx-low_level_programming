@@ -1,27 +1,20 @@
 #include "main.h"
 
 /**
- * _strncpy -  copies n bytes of a source into buffer of a destination string
- * @dest: copy source to this buffer
- * @src: source to copy
- * @n: n bytes to copy
- * Return: copied string
+ * _strcmp - compares two string
+ * @s1: string one
+ * @s2: string two
+ * Return: int that tells num spaces in between
  */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int i;
 
-	while (i < n && src[i] != '\0')
+	for (i = 0; s1[] != '\0' && s2[i] != '\0'; i++)
 	{
-		dest[i] = src[i];
-		i++;
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
 	}
-	if (i < n)
-	{
-		for (; i < n; i++)
-
-		dest[i] = '\0';
-	}
-	return (dest);
+	return (0);
 }
