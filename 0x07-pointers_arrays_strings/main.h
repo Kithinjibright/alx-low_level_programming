@@ -72,11 +72,13 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 
 /**
- * print_diagsum - prints the sum of the two diagnols of a square matrix of integers
+ * print_diagsum - prints the sum of two diagnols of a square matrix of integers
+ * print_diagsums - print sums of diagonals in matrix
  * @a: matrix
- * @size: size
- * Return: nothing
+ * @size: size of matrix
  */
 
 void print_diagsums(int *a, int size);
+
+#endif
 
