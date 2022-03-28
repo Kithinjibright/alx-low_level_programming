@@ -78,5 +78,5 @@ void print_chessboard(char (*a)[8]);
  * Return: nothing
  */
 
-void print_diagsum(int *a, int size);
+void print_diagsums(int *a, int size);
 

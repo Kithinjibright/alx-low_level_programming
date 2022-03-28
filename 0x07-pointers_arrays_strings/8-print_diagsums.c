@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_diagsum - prints the sum of the two diagnols of a square matrix of integers
+ * print_diagsums - prints the sum of the two diagnols of a square matrix of integers
  * @a: matrix
  * @size: size
  * Return: nothing
  */
 
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int b, sum1 = 0, sum2 = 0;
 
