@@ -44,3 +44,12 @@ char *_strchr(char *s, char c);
  */
 
 unsigned int _strspn(char *s, char *accept);
+
+/**
+ * _strpbrk - searches string for a set of bytes
+ * @s: source string
+ * @accept: string to compare the bytes
+ * Return: string matching one of the bytes with character found
+ */
+
+char *_strpbrk(char *s, char *accept);
