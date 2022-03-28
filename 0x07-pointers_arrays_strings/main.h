@@ -53,3 +53,12 @@ unsigned int _strspn(char *s, char *accept);
  */
 
 char *_strpbrk(char *s, char *accept);
+
+/**
+ * _strstr - locate a substring
+ * @haystack: string
+ * @needle: substring
+ * Returns: pointer to the beginning of the located substring
+ */
+
+char *_strstr(char *haystack, char *needle);
