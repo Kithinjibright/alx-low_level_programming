@@ -5,8 +5,7 @@
  *main - prints minimum number of coins to make change for an amount of money
  *@argc: number of argument supplied to program
  *@argv: arrays pointing to the argument
- *Return: number of arguments is not one - 1.
-          otherwise - 0.
+ *Return: print 1 if there is an error; else return 0
 */
 int main(int argc, char *argv[])
 {
