@@ -33,6 +33,14 @@ char *_strdup(char *str);
  */
 
 char *str_concat(char *s1, char *s2);
+
+/**
+ * alloc_grid - returns a pointer to a 2d array of integers
+ * @width: columns
+ * @height: rows
+ * Return: pointer to 2d array
+ */
+
 int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
