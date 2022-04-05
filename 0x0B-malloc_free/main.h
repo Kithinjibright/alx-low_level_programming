@@ -50,7 +50,23 @@ int **alloc_grid(int width, int height);
  */
 
 void free_grid(int **grid, int height);
+
+/**
+ * argstostr - concatenats arguments of the program
+ * @ac: argument count
+ * @av: argument vector
+ * Return: pointer to array
+ */
+
 char *argstostr(int ac, char **av);
+
+/**
+ * count_word - helper function to count the number of words in a string
+ * @s: string to evaluate
+ *
+ * Return: number of words
+ */
+
 char **strtow(char *str);
 
 #endif
