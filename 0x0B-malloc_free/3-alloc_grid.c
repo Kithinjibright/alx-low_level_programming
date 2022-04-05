@@ -9,45 +9,32 @@
  * Return: 2d array
  */
 
-int **aloc_grid(int width, int length)
+int **alloc_grid(int width, int length)
 {
-	int i, j, k, l;
-	int **a;
+	int **grid;
+	int i, j;
 
-	if (width <= 0 || height <= 0)
+	if (width <= 0 || height <= 0) /* validate input */
 		return (NULL);
 
-	a = malloc(sizeof(int *) * height);
+	grid = malloc(height * sizeof(int *)); /*allocate memory for rows*/
 
-	if (a == NULL)
-	{
-		free(a);
+	if (grid == NULL) /* validate memory */
 		return (NULL);
-	}
 
-	for (i = 0; i < height; i++)
+	for (i = 0; i < height; i++) /*allocate memory for columns of each row*/
 	{
-		a[i] = malloc(sizeof(int) * width);
-
-		if (a[i] == NULL)
+		grid[i] = malloc(width * sizeof(int));
+		if (grid[i] == NULL) /* validate memory */
 		{
-			for (j = i; j >= 0; j--)
-			{
-				free(a[j]);
-			}
-
-			free(a);
+			for (i = 0; i < height; i++)
+				free(grid[i]);
+			free(grid);
 			return (NULL);
 		}
+		for (j = 0; j < width; j++) /* set array values to 0 */
+			grid[i][j] = 0;
 	}
 
-	for (k = 0; k < height; k++)
-	{
-		for (l = 0; l < width; l++)
-		{
-			a[k][l] = 0;
-		}
-	}
-
-	return (a);
+	return (grid);
 }
