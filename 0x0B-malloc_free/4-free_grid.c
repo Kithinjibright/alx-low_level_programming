@@ -3,8 +3,8 @@
 #include "main.h"
 
 /**
- * free_grid - frees the 2d grid that was previously created in alloc_grid function
- * @grid: pointer to previous 2d array
+ * free_grid - frees the 2d grid in alloc_grid function
+ * @grid: pointer to 2d array
  * @height: height of array
  */
 
