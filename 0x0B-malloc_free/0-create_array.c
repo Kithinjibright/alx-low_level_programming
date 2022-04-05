@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * create_array: creates array of chars initializes with specific char
- * @size: array size
- * @c: char to fill the array with
- * Return: Filled array
+ * create_array - create array of chars and initialize with a specific char
+ * @size: size of array
+ * @c: fill array values with this char
+ * Return: pointer to array
  */
 
 char *create_array(unsigned int size, char c)
@@ -30,5 +30,4 @@ char *create_array(unsigned int size, char c)
 
 	return (arr);
 }
-
 
