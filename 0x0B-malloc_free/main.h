@@ -42,6 +42,13 @@ char *str_concat(char *s1, char *s2);
  */
 
 int **alloc_grid(int width, int height);
+
+/**
+ * free_grid - frees the 2d grid that was previously created in alloc_grid function
+ * @grid: pointer to previous 2d array
+ * @height: height of array
+ */
+
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
