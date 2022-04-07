@@ -35,4 +35,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 void *_calloc(unsigned int nmemb, unsigned int size);
 
+/**
+ * array_range - creates array of integers
+ * @min: range starts from
+ * @max: end range at
+ * Return: newly created array
+ */
+
+int *array_range(int min, int max);
+
 #endif
