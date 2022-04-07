@@ -44,4 +44,14 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 
 int *array_range(int min, int max);
 
+/**
+ * _realloc - uses malloc and free to reallocate a memory block
+ * @ptr: pointer t emory previously allocated (malloc(old_size))
+ * @old_size: previous allocated size
+ * @new_size: new size to reallocated
+ * Return: reallocated memory
+ */
+
+void *realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
 #endif
