@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
- * free_dog - frees dog
- * @d: dog_t to be freed
- */
+  * free_dog - ...
+  * @d: ...
+  *
+  * Return: ...
+  */
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
