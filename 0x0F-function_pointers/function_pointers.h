@@ -27,6 +27,7 @@ void print_name(char *name, void (*f)(char *));
  * @size: array size
  * @action: pointer to a function
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int));
 
 #endif
