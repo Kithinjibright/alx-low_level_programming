@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - print numbers
- * @seperator: limiter
+ * @separator: limiter
  * @n: argument number in list
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
